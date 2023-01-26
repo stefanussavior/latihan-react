@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  text-align: center;
+  height: 800px;
+  width: auto;
+}
+
+.flex-item-left {
+  background-image: url("/src/image/FILE1053.png");
+  padding: 10px;
+  flex: 110%;
+  height: auto;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+}
+
+.judul_login {
+  color: white;
+  font-weight: 800;
+  text-align: left;
+}
+
+.form1 {
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column-reverse;
+  }
+}

@@ -2,24 +2,29 @@ body {
   font-family: "Poppins";
 }
 
-.scrollspy {
+.index_navbar .scrollspy {
   margin: 10px;
   position: fixed;
   top: 0;
   right: 0;
 }
 
-.navbar {
+.index_navbar .navbar {
   background: linear-gradient(to top right, #037ed7 50%, white 100%);
-  border-radius: 0px 0px 0px 10px;
+  border-radius: 0px 0px 0px 0;
+  box-shadow: black 2px 5px 2px 2px;
 }
 
-.navbar-brand {
+.index_navbar .navbar-brand {
   font-weight: bold;
   color: white;
 }
 
-.nav-link {
+.index_navbar .linkContainer {
+  color: white;
+}
+
+.index_navbar .nav-link {
   color: white;
   font-weight: bold;
   font-size: 18px;

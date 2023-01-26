@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+  color: red;
+}
+
+.style_sidebar {
+  position: relative;
+  right: 2px;
+  width: 100%;
+  height: auto;
+}
+
+.box {
+  font-style: italic;
+  text-align: center;
+  line-height: 0.2;
+  font-weight: 900;
+  font-family: "Poppins";
+}
+
+@media screen and (max-width: 200px) {
+  .box {
+    font-size: 20px;
+  }
+}
+
+.style_sidebar .navbar {
+  background-color: #377fd9;
+  border-radius: 0px 0px 0px 0;
+  /* box-shadow: black 2px 5px 2px 2px; */
+  color: red;
+}
