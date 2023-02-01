@@ -4,6 +4,7 @@ import "./css/Sign_up.css";
 import "@fontsource/poppins";
 import { LinkContainer } from "react-router-bootstrap";
 import PropTypes from "prop-types";
+import Swal from "sweetalert2";
 
 async function loginUser(credentials) {
   return fetch("", {
@@ -16,17 +17,27 @@ async function loginUser(credentials) {
 }
 
 export default function SignUp({ setToken }) {
-  // const classes = useStyles();
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const token = await loginUser({
+    const response = await loginUser({
       username,
       password,
     });
-    setToken(token);
+    if ("accessToken" in response) {
+      Swal("Success", response.message, "Success", {
+        button: false,
+        timer: 2000,
+      }).then((value) => {
+        localStorage.setItem("accessToken", response["accessToken"]);
+        localStorage.setItem("user", JSON.stringify(response["user"]));
+        window.location.href = "/Sidebar";
+      });
+    } else {
+      Swal("Failed", response.message, "Error");
+    }
   };
 
   return (

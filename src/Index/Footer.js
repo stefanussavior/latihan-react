@@ -43,78 +43,82 @@ const Footer = () => {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
                 <MDBIcon icon="gem" className="me-3" />
-                Company name
+                {/* Company name */}
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer
+                {/* Here you can use rows and columns to organize your footer
                 content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                elit. */}
               </p>
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+              <h6 className="text-uppercase fw-bold mb-4">{/* Products */}</h6>
               <p>
                 <a href="#!" className="text-reset" onClick={"#"}>
-                  Angular
+                  {/* Angular */}
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset" onClick={"#"}>
-                  React
+                  {/* React */}
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset" onClick={"#"}>
-                  Vue
+                  {/* Vue */}
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset" onClick={"#"}>
-                  Laravel
+                  {/* Laravel */}
                 </a>
               </p>
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+              <h6 className="text-uppercase fw-bold mb-4">
+                {/* Useful links */}
+              </h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Pricing
+                  {/* Pricing */}
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Settings
+                  {/* Settings */}
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Orders
+                  {/* Orders */}
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Help
+                  {/* Help */}
                 </a>
               </p>
             </MDBCol>
 
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+              <h6 className="text-uppercase fw-bold mb-4">{/* Contact */}</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                {/* New York, NY 10012, US */}
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                {/* info@example.com */}
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+                <MDBIcon icon="phone" className="me-3" />
+                {/* + 01 234 567 88 */}
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                <MDBIcon icon="print" className="me-3" />
+                {/* + 01 234 567 89 */}
               </p>
             </MDBCol>
           </MDBRow>
@@ -125,9 +129,9 @@ const Footer = () => {
         className="text-center p-4"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
-        © 2023 Copyright:
+        {/* © 2023 Copyright: */}
         <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          MDBootstrap.com
+          {/* MDBootstrap.com */}
         </a>
       </div>
     </MDBFooter>

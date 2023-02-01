@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { BiLogOut } from "react-icons/bi";
 import { RiAccountCircleFill } from "react-icons/ri";
 import { MdSick } from "react-icons/md";
@@ -25,6 +25,23 @@ import "../Dashboard/css/Sidebar.css";
 
 export default function SidebarAccount() {
   const { collapseSidebar } = useProSidebar();
+  const [anchorEL, setAnchorEL] = useState();
+  const open = boolean(anchorEL);
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  const HandleMenu = (event) => {
+    setAnchorEL(event.currentTarget);
+  };
+
+  const HandleClose = (event) => {
+    setAnchorEL(null);
+  };
+
+  const handleLogout = (event) => {
+    localStorage.removeItem("accessToken");
+    localStorage.removeItem("user");
+    window.location.href = "/";
+  };
 
   return (
     <>
@@ -82,7 +99,9 @@ export default function SidebarAccount() {
               <MenuItem>Lihat Penyakit</MenuItem>
             </SubMenu>
             <MenuItem icon={<RiAccountCircleFill />}>Account</MenuItem>
-            <MenuItem icon={<BiLogOut />}>Logout</MenuItem>{" "}
+            <MenuItem icon={<BiLogOut />} onClick={handleLogout}>
+              Logout
+            </MenuItem>{" "}
             <div className="box">
               <br />
               <br />
